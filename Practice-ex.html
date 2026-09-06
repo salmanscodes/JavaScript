@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Digital Clock</title>
+
+    <style>
+        #clock {
+            font-size: 50px;
+            font-family: monospace;
+            text-align: center;
+            margin-top: 400px;
+            color: red;
+            background-color: black;
+        }
+
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: black;
+            color: white;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!--      
+    <h1 id="clock"></h1>
+========================== Digital clock ==================================
+   <script>
+    setInterval(()=>{
+    let ti=document.getElementById("clock");
+    let date=new Date();
+    ti.textContent=date.toLocaleTimeString();
+    },1000
+   )
+   </script> -->
+
+    <!-- =================== Guess the Number ======================= -->
+    <!-- <script>
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+let guesses = 0;
+
+while (true) {
+
+    let guess = Number(prompt("Guess a number between 1 and 100:"));
+console.log(randomNumber);
+    guesses++;
+
+    if (guess === randomNumber) {
+
+        console.log("🎉 Correct!");
+        console.log("The number was:", randomNumber);
+        console.log("Number of guesses:", guesses);
+
+        let score = 100 - guesses;
+
+        console.log("Your score:", score);
+
+        break;
+    }
+
+    else if (guess > randomNumber) {
+
+        console.log("Your guess is greater than the original number.");
+
+    }
+
+    else {
+
+        console.log("Your guess is less than the original number.");
+
+    }
+}
+
+</script> -->
+    <!-- Snake water gun game -->
+    <!-- <script>
+let user = prompt("Enter S for Snake, W for Water, or G for Gun");
+
+user = user.toUpperCase();
+
+let random = Math.floor(Math.random() * 3);
+
+let computer;
+
+if (random === 0) {
+    computer = "S";
+}
+else if (random === 1) {
+    computer = "W";
+}
+else {
+    computer = "G";
+}
+
+console.log("You:", user);
+console.log("Computer:", computer);
+
+if (user === computer) {
+    alert("It's a Draw!");
+}
+else if (
+    (user === "S" && computer === "W") ||
+    (user === "W" && computer === "G") ||
+    (user === "G" && computer === "S")
+) {
+    alert("You Win! 🎉");
+}
+else {
+    alert("Computer Wins! 🤖");
+}
+</script> -->
+
+<!-- ================================= localStorage in javascript============================== -->
+    <!-- <button>add Note</button>
+<div class="note">Note</div>
+<script>
+    function saveNoteToLocalStorage(note){
+        localStorage.setItem("note",note)
+    }
+    let note=localStorage.getItem("note");
+    if(note){
+         document.querySelector(".note").innerHTML=note;
+    }
+    document.querySelector("button").addEventListener("click",()=>{
+            let note = prompt("Enter your note")
+            saveNoteToLocalStorage(note)
+            document.querySelector(".note").innerHTML = note
+    })
+</script> -->
+
+<!-- ============================== Scroll Effect In JavaScrip ===================================== -->
+    <div id="about" style="height: 2000px; background-color: blue; margin-top:0; color:red; font-size: 25px;">
+        About Us
+        <p style="font-size: 20px; color:aliceblue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio iste
+            earum necessitatibus, suscipit quas corrupti qui commodi, sequi nobis maxime ratione rem sapiente architecto
+            assumenda reprehenderit dicta impedit illo aliquid ea soluta. Molestias possimus quisquam voluptatibus odit
+            culpa harum vero ipsam at, pariatur, ab accusantium!</p>
+    </div>
+    <button id="btn" style="font-size: 20px; background-color: brown; margin:5px 5px 5px 5px;">Go to About</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let about = document.getElementById("about");
+        btn.addEventListener("click", () => {
+            about.scrollIntoView({
+             behaviour:"smooth"
+            })
+        }
+        )
+    </script>
+</body>
+
+</html>
